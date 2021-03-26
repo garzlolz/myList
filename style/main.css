@@ -2,7 +2,10 @@ body{
     background-color:rgba(21, 94, 66, 0.288);
     text-align: center;
 }
-
+.container{
+    margin: auto;
+    width: 16%;
+}
 .footer{
     position:absolute;
     left: 0px;
