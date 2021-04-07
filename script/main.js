@@ -50,7 +50,10 @@ var list2='';
 var list3='';
 
 for(let i=0;i<data.personal.length;i++){
-    list1+=`<li><a href="${data.personal[i].link}">${data.personal[i].name}</a></li>`
+    list1+=`
+        <li><a href="${data.personal[i].link}">${data.personal[i].name}</a></li>
+        <div><em>${data.personal[i].desciption}</em></div>
+    `
     mySelf.innerHTML = list1;
 };
 for(let i=0;i<data.api.length;i++){
@@ -60,6 +63,10 @@ for(let i=0;i<data.api.length;i++){
 };
 
 for(let i=0;i<data.counter.length;i++){
-    list3+= `<li><a href="${data.counter[i].link}">${data.counter[i].name}</a></li>`
+    list3+= `
+    <li><a href="${data.counter[i].link}">${data.counter[i].name}</a></li>
+    <div><em>${data.counter[i].desciption}</em></div>
+    `
     count.innerHTML = list3;
 }
+
