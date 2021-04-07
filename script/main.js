@@ -1,7 +1,6 @@
 var data = 
     {
         api:[
-            
                 {
                     name:'全台口罩剩餘數量',
                     desciption:'利用政府的開放資訊做成的全台口罩剩餘數量資訊網，可以查詢市區、行政區',
@@ -30,8 +29,13 @@ var data =
                     name:'BMI計算機',
                     desciption:'以JS和CSS為練習的BMI計算機，以localstorage的方式儲存',
                     link:'https://garzlolz.github.io/bmi-calculator/index.html'
+                },
+                {
+                    name:'Vue練習＿匯率計算機',
+                    desciption:'以v-model作為練習的匯率轉換',
+                    link:'https://garzlolz.github.io/Vue-exchange-rate/'
                 }
-        ]
+                ]
     }
 
 
@@ -45,16 +49,17 @@ var list1='';
 var list2='';
 var list3='';
 
-for(var i=0;i<data.personal.length;i++){
+for(let i=0;i<data.personal.length;i++){
     list1+=`<li><a href="${data.personal[i].link}">${data.personal[i].name}</a></li>`
     mySelf.innerHTML = list1;
 };
-for(var i=0;i<data.api.length;i++){
-    list2+=`<li><a href="${data.api[i].link}">${data.api[i].name}</a></li>`;
+for(let i=0;i<data.api.length;i++){
+    list2+=`<li><a href="${data.api[i].link}">${data.api[i].name}</a></li>
+        <div><em>${data.api[i].desciption}</a></em></div>`;
     apiPrac.innerHTML = list2;
-}
+};
 
-for(var i=0;i<data.counter.length;i++){
-    list3 = `<li><a href="${data.counter[i].link}">${data.counter[i].name}</a></li>`
+for(let i=0;i<data.counter.length;i++){
+    list3+= `<li><a href="${data.counter[i].link}">${data.counter[i].name}</a></li>`
     count.innerHTML = list3;
 }
