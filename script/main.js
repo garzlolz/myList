@@ -34,6 +34,11 @@ var data =
                     name:'Vue練習＿匯率計算機',
                     desciption:'以v-model作為練習的匯率轉換',
                     link:'https://garzlolz.github.io/Vue-exchange-rate/'
+                },
+                {
+                    name:'Google App Script實作 [google sheet] 多國翻譯',
+                    desciption:'以google表單與app script連結能同時翻譯多國語言以及點擊後有語音',
+                    link:'https://docs.google.com/spreadsheets/d/1np0ja9l5TQ9bniatg5YOppqVcEZRDK-AWyyfNPBvVTU/edit?usp=sharing'
                 }
                 ]
     }
